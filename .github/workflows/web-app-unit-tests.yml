@@ -1,0 +1,14 @@
+name: web_app_unit_tests
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths:
+      - "clients/web/**/*"
+jobs:
+  web_app_unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run unit tests
+        run: echo "not implemented"

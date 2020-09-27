@@ -1,0 +1,22 @@
+subprojects:
+  - id: server
+    paths:
+      - "server/**/*"
+    checks:
+      - "server_static_analysis"
+      - "server_unit_tests"
+      - "compatibility_check"
+  - id: mobile_app
+    paths:
+      - "clients/app/**/*"
+    checks:
+      - "mobile_app_static_analysis"
+      - "mobile_app_unit_tests"
+      - "compatibility_check"
+  - id: web_app
+    paths:
+      - "clients/web/**/*"
+    checks:
+      - "web_app_static_analysis"
+      - "web_app_unit_tests"
+      - "compatibility_check"

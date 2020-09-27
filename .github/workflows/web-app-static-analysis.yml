@@ -1,0 +1,14 @@
+name: web_app_static_analysis
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths:
+      - "clients/web/**/*"
+jobs:
+  web_app_static_analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run unit tests
+        run: echo "not implemented"

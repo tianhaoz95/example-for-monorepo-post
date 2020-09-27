@@ -1,0 +1,16 @@
+name: compatibility_check
+on:
+  pull_request:
+    branches:
+      - "master"
+    paths:
+      - "clients/app/**/*"
+      - "clients/web/**/*"
+      - "server/**/*"
+jobs:
+  compatibility_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: run unit tests
+        run: echo "not implemented"
