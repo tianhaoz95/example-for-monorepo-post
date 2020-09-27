@@ -1,4 +1,4 @@
-name: web_app_static_analysis
+name: mobile_app_static_analysis
 on:
   pull_request:
     branches:
@@ -6,7 +6,7 @@ on:
     paths:
       - "clients/app/**/*"
 jobs:
-  web_app_static_analysis:
+  mobile_app_static_analysis:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
